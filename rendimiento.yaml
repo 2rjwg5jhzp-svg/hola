@@ -1,0 +1,7 @@
+# What rendimiento deploys from this repository: one web service, built
+# from the Dockerfile. See https://learn.rendimiento.ai/guide/spec/
+services:
+  - name: web
+    port: 8080
+    size: small
+    health: { path: / }
